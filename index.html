@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohit Dighamber | Research & Engineering Profile</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom font for a clean, modern look */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7fafc; /* Light gray background */
+        }
+        .header-bg {
+            background-color: #1a202c; /* Dark charcoal/blue for contrast */
+            color: white;
+            padding: 3rem 0;
+            clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+        }
+        .section-header {
+            border-left: 4px solid #4299e1; /* Blue accent */
+            padding-left: 1rem;
+            margin-bottom: 1.5rem;
+            font-weight: 700;
+            font-size: 1.5rem;
+            color: #2d3748; /* Dark gray text */
+        }
+        .card {
+            background-color: white;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.06);
+            transition: transform 0.2s;
+        }
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+        }
+        .skill-badge {
+            display: inline-block;
+            background-color: #e2e8f0;
+            color: #4a5568;
+            font-size: 0.875rem;
+            font-weight: 500;
+            padding: 0.25rem 0.75rem;
+            margin: 0.25rem;
+            border-radius: 9999px;
+            border: 1px solid #cbd5e0;
+        }
+        .timeline-item {
+            position: relative;
+            padding-left: 2rem;
+            margin-bottom: 2rem;
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0.25rem;
+            width: 0.75rem;
+            height: 0.75rem;
+            background-color: #4299e1;
+            border-radius: 50%;
+            border: 2px solid white;
+            z-index: 10;
+        }
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            left: 0.375rem;
+            top: 1rem;
+            bottom: -2rem;
+            width: 2px;
+            background-color: #cbd5e0;
+            z-index: 5;
+        }
+        .timeline-container > .timeline-item:last-child::after {
+            content: none;
+        }
+    </style>
+</head>
+<body class="text-gray-700">
+
+    <!-- Header Section - Contact Info Commented Out to Focus on Academic Profile -->
+    <header class="header-bg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h1 class="text-6xl font-extrabold tracking-tight mb-2 text-white">Mohit Dighamber</h1>
+                <p class="text-2xl font-light text-gray-300">Advanced Research in Machine Learning & Physical Sciences</p>
+                <!--
+                <div class="mt-6 flex justify-center space-x-6 text-lg">
+                    <a href="tel:513-239-9616" class="flex items-center text-gray-300 hover:text-blue-400 transition">
+                        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 00.948.684l1.498 4.493a1 1 0 00.956.634h4.522a1 1 0 00.948-.684l1.498-4.493A1 1 0 0017.72 3H21a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5z"></path></svg>
+                        (513) 239-9616
+                    </a>
+                    <a href="mailto:mohit.dighamber@gmail.com" class="flex items-center text-gray-300 hover:text-blue-400 transition">
+                        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                        Email
+                    </a>
+                    <a href="https://linkedin.com/in/dighamber" target="_blank" rel="noopener noreferrer" class="flex items-center text-gray-300 hover:text-blue-400 transition">
+                        <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.136-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path></svg>
+                        LinkedIn
+                    </a>
+                </div>
+                -->
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-12 mb-12">
+
+        <!-- Education Section - Moved to top for academic focus -->
+        <section id="education" class="mb-12">
+            <h2 class="section-header mb-6">Education</h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <!-- MEng Card -->
+                <div class="card p-6 rounded-xl border border-gray-200">
+                    <h3 class="text-xl font-semibold text-blue-800">Master of Engineering in Computer Science (MEng)</h3>
+                    <p class="text-lg font-medium text-gray-800">Massachusetts Institute of Technology (MIT)</p>
+                    <p class="text-sm text-gray-500 mb-3">Sept. 2023 – Sept. 2024, Cambridge, MA</p>
+                    <p class="text-sm font-bold">GPA: 5.0/5.0</p>
+                    <p class="mt-2 text-sm italic">Thesis: Physics-Informed Deep Learning for Plasma Etch Optimization</p>
+                </div>
+                <!-- BS Card -->
+                <div class="card p-6 rounded-xl border border-gray-200">
+                    <h3 class="text-xl font-semibold text-blue-800">Dual BS in Computer Science & Physics</h3>
+                    <p class="text-lg font-medium text-gray-800">Massachusetts Institute of Technology (MIT)</p>
+                    <p class="text-sm text-gray-500 mb-3">Sept. 2019 – June 2023, Cambridge, MA</p>
+                    <p class="text-sm font-bold">GPA: 4.7/5.0</p>
+                    <p class="mt-2 text-sm">Recognized as a QuestBridge Scholar (Full cost of attendance scholarship)</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Research Experience Section - Elevated to be the core section -->
+        <section id="research-experience" class="mb-12">
+            <h2 class="section-header">Research Experience & Publications</h2>
+            <div class="timeline-container">
+
+                <!-- MIT EECS Entry (Thesis) -->
+                <div class="timeline-item card p-5 rounded-xl border border-gray-200">
+                    <div class="flex justify-between items-start mb-2">
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-800">MIT Department of Electrical Engineering and Computer Science</h3>
+                            <p class="text-lg text-gray-600">Research Advisor: Duane Boning</p>
+                        </div>
+                        <span class="text-sm font-medium text-blue-600 bg-blue-100 px-3 py-1 rounded-full whitespace-nowrap">June 2023 – Sept. 2024</span>
+                    </div>
+                    <ul class="list-disc ml-5 space-y-1 text-gray-700">
+                        <li>Optimized semiconductor manufacturing by applying deep learning to the plasma etch process, improving process modeling with physics-informed machine learning.</li>
+                        <li>Strengthened neural network solvers by investigating their robustness against data errors and noise for various PDEs, including Navier-Stokes and Maxwell's equations.</li>
+                    </ul>
+                    <p class="mt-3 text-sm font-semibold">Publications & Presentations:</p>
+                    <ul class="list-none text-sm ml-0 space-y-1 text-gray-600">
+                        <li><span class="font-mono text-xs text-gray-500 mr-2">[Thesis]</span> *Physics-Informed Deep Learning for Plasma Etch Optimization*, MIT DSpace, 2024.</li>
+                        <li><span class="font-mono text-xs text-gray-500 mr-2">[ICCAD]</span> Benchmarking the Robustness of Neural Network-based PDE Solvers (Gu, Dighamber, Gao, Boning), 2023.</li>
+                    </ul>
+                </div>
+
+                <!-- Fermilab Entry -->
+                <div class="timeline-item card p-5 rounded-xl border border-gray-200">
+                    <div class="flex justify-between items-start mb-2">
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-800">Fermi National Accelerator Laboratory</h3>
+                            <p class="text-lg text-gray-600">Research Advisor: Antonella Palmese</p>
+                        </div>
+                        <span class="text-sm font-medium text-blue-600 bg-blue-100 px-3 py-1 rounded-full whitespace-nowrap">June 2021 – Aug. 2021</span>
+                    </div>
+                    <ul class="list-disc ml-5 space-y-1 text-gray-700">
+                        <li>Used existing DES data to search for the optical emission expected from binary neutron stars or binary black holes emitting gravitational waves in active galactic nuclei (AGN) disks.</li>
+                        <li>Handled analyses of big data in astrophysics and applied machine learning methods to classify astrophysical objects encountered in the search.</li>
+                    </ul>
+                    <p class="mt-3 text-sm font-semibold">Presentations:</p>
+                    <ul class="list-none text-sm ml-0 space-y-1 text-gray-600">
+                        <li>Poster Presentation: Hunting Gravitational Wave Mergers with Cosmic Surveys, Fermi National Accelerator Laboratory, 2021.</li>
+                    </ul>
+                </div>
+
+                <!-- MIT Physics Entry -->
+                <div class="timeline-item card p-5 rounded-xl border border-gray-200">
+                    <div class="flex justify-between items-start mb-2">
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-800">MIT Department of Physics</h3>
+                            <p class="text-lg text-gray-600">Research Advisors: Sara Seager, Julien de Wit</p>
+                        </div>
+                        <span class="text-sm font-medium text-blue-600 bg-blue-100 px-3 py-1 rounded-full whitespace-nowrap">May 2020 – May 2021</span>
+                    </div>
+                    <ul class="list-disc ml-5 space-y-1 text-gray-700">
+                        <li>Worked at the heart of the TESS and SPECULOOS science teams, leveraging machine learning techniques, Bayesian statistics, and model fitting to search for extremely faint exoplanet signals.</li>
+                        <li>Analyzed time series data, vetted exoplanet candidates, and communicated findings with peers and mentors.</li>
+                    </ul>
+                    <p class="mt-3 text-sm font-semibold">Presentations:</p>
+                    <ul class="list-none text-sm ml-0 space-y-1 text-gray-600">
+                        <li>Plenary Speaker and Poster Presentation: Hunting for Prime Exoplanets with TESS and SPECULOOS, Harvard University National Collegiate Research Conference, 2021.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Professional Experience Section - Commented out for PhD focus -->
+        <!--
+        <section id="professional-experience" class="mb-12">
+            <h2 class="section-header">Professional Experience</h2>
+            <div class="timeline-container">
+                <div class="timeline-item card p-5 rounded-xl border border-gray-200">
+                    <div class="flex justify-between items-start mb-2">
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-800">Software Engineer - Machine Learning/Compilers</h3>
+                            <p class="text-lg text-gray-600">Google</p>
+                        </div>
+                        <span class="text-sm font-medium text-blue-600 bg-blue-100 px-3 py-1 rounded-full whitespace-nowrap">Mar. 2025 - Present</span>
+                    </div>
+                    <ul class="list-disc ml-5 space-y-1 text-gray-700">
+                        <li>Engineered and optimized low-level software for Google's SparseCore accelerator, a custom ASIC for sparse tensor operations in large-scale ML models.</li>
+                        <li>Implemented performance optimizations in MLIR for accelerating embeddings processing on TPUs (supporting projects like Gemini, Waymo, and AlphaFold).</li>
+                    </ul>
+                </div>
+                <div class="timeline-item card p-5 rounded-xl border border-gray-200">
+                    <div class="flex justify-between items-start mb-2">
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-800">Software Development Engineer Intern - Machine Learning</h3>
+                            <p class="text-lg text-gray-600">Amazon</p>
+                        </div>
+                        <span class="text-sm font-medium text-blue-600 bg-blue-100 px-3 py-1 rounded-full whitespace-nowrap">May 2024 – Aug. 2024</span>
+                    </div>
+                    <ul class="list-disc ml-5 space-y-1 text-gray-700">
+                        <li>Developed and fine-tuned proprietary large language models using LORA to enhance recommendation algorithms.</li>
+                        <li>Achieved a 93% defect detection rate for recommended items.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        -->
+
+        <!-- Coursework Section - New, detailed section vital for PhD application -->
+        <section id="coursework" class="mb-12">
+            <h2 class="section-header">Relevant Advanced Coursework</h2>
+            <div class="space-y-6">
+                <!-- AI/ML/Decision Making -->
+                <div class="card p-5 rounded-xl border border-gray-200">
+                    <h3 class="text-lg font-semibold text-gray-800 mb-3">Artificial Intelligence and Decision Making</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-badge">Deep Learning (6.S898)</span>
+                        <span class="skill-badge">Natural Language Processing (6.8610)</span>
+                        <span class="skill-badge">Matrix Methods in Machine Learning (18.065)</span>
+                        <span class="skill-badge">Intro to Machine Learning (6.036)</span>
+                        <span class="skill-badge">Optimization Methods (15.053)</span>
+                        <span class="skill-badge">Stochastic Models (15.780)</span>
+                        <span class="skill-badge">Game Theory (14.12)</span>
+                    </div>
+                </div>
+
+                <!-- Physics -->
+                <div class="card p-5 rounded-xl border border-gray-200">
+                    <h3 class="text-lg font-semibold text-gray-800 mb-3">Physics</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-badge">Quantum Physics I (8.044)</span>
+                        <span class="skill-badge">Statistical Physics I (8.04)</span>
+                        <span class="skill-badge">Classical Mechanics II (8.223)</span>
+                        <span class="skill-badge">Special Relativity (8.20)</span>
+                        <span class="skill-badge">Extrasolar Planets (8.290)</span>
+                        <span class="skill-badge">Optical Astronomy (8.287)</span>
+                    </div>
+                </div>
+
+                <!-- Mathematics -->
+                <div class="card p-5 rounded-xl border border-gray-200">
+                    <h3 class="text-lg font-semibold text-gray-800 mb-3">Mathematics</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-badge">Real Analysis (18.100A)</span>
+                        <span class="skill-badge">Linear Algebra (18.06)</span>
+                        <span class="skill-badge">Probability and Random Variables (18.600)</span>
+                        <span class="skill-badge">Logic I (24.241)</span>
+                        <span class="skill-badge">Combinatorial Analysis (18.211)</span>
+                        <span class="skill-badge">Differential Equations (18.03)</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects & Skills Section -->
+        <section id="projects-skills" class="mb-12">
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Projects -->
+                <div>
+                    <h2 class="section-header">Projects</h2>
+                    <div class="space-y-4">
+                        <div class="p-4 rounded-xl card border border-gray-200">
+                            <p class="font-semibold text-gray-800">Ensemble Learning for Mitigating Double Descent (MIT 6.S898)</p>
+                            <p class="text-sm text-gray-600">Found improved model performance when using ensemble methods for overparameterized ML models.</p>
+                        </div>
+                        <div class="p-4 rounded-xl card border border-gray-200">
+                            <p class="font-semibold text-gray-800">TGLP: An Adversarial Example Generator (MIT 6.8610)</p>
+                            <p class="text-sm text-gray-600">Designed a novel method for creating adversarial examples for improving language model robustness.</p>
+                        </div>
+                        <div class="p-4 rounded-xl card border border-gray-200">
+                            <p class="font-semibold text-gray-800">Game Theory and Algorithms for Sports Betting (MIT 14.18)</p>
+                            <p class="text-sm text-gray-600">Researched Monte Carlo methods and non-linear optimization for creating optimal betting strategies.</p>
+                        </div>
+                        <div class="p-4 rounded-xl card border border-gray-200">
+                            <p class="font-semibold text-gray-800">Text Generation with Markov Chains, RNNs, and LSTMs (MIT 18.065)</p>
+                            <p class="text-sm text-gray-600">Investigated NLP models and hyperparameter optimization for improving accuracy in text generation tasks.</p>
+                        </div>
+                        <div class="p-4 rounded-xl card border border-gray-200">
+                            <p class="font-semibold text-gray-800">Measuring the Variability of RR Lyrae (MIT 8.287)</p>
+                            <p class="text-sm text-gray-600">Developed and applied computational methods, including phase dispersion minimization and linear approximations, to analyze time series data and characterize the photometric variability of RR Lyrae.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skills -->
+                <div>
+                    <h2 class="section-header">Technical Skills & Affiliations</h2>
+                    <div class="card p-5 rounded-xl border border-gray-200">
+                        <h3 class="text-lg font-semibold mb-2 text-gray-800">Skills</h3>
+                        <div>
+                            <span class="skill-badge">Python</span>
+                            <span class="skill-badge">C++</span>
+                            <span class="skill-badge">Tensorflow</span>
+                            <span class="skill-badge">Pytorch</span>
+                            <span class="skill-badge">MLIR</span>
+                            <span class="skill-badge">LLVM</span>
+                            <span class="skill-badge">XLA</span>
+                            <span class="skill-badge">SQL</span>
+                            <span class="skill-badge">Spark</span>
+                            <span class="skill-badge">AWS</span>
+                        </div>
+                    </div>
+                    <div class="card p-5 rounded-xl border border-gray-200 mt-4">
+                        <h3 class="text-lg font-semibold mb-2 text-gray-800">Awards & Professional Societies</h3>
+                        <p class="text-sm text-gray-600">American Physical Society, American Astronomical Society, MIT Society of Physics Students.</p>
+                        <p class="text-sm text-gray-600 mt-1 font-semibold">Awards:</p>
+                        <p class="text-sm text-gray-600">Certificate in Advanced Undergraduate Research (2021) - *Only sophomore recipient in 2021.*</p>
+                        <p class="text-sm text-gray-600">QuestBridge Scholar (Full-Tuition Scholarship).</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Service Section -->
+        <section id="service" class="mb-12">
+            <h2 class="section-header">Service</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="card p-4 rounded-xl border border-gray-200">
+                    <p class="font-semibold text-gray-800">Teaching Assistant, Special Relativity (8.20) at MIT (Winter 2021)</p>
+                    <p class="text-sm text-gray-600">Taught students and answered questions during lectures, held office hours, and graded problem sets.</p>
+                </div>
+                <div class="card p-4 rounded-xl border border-gray-200">
+                    <p class="font-semibold text-gray-800">Co-founder, MIT First Generation/Low Income Program (Jan. 2021 – Aug. 2021)</p>
+                    <p class="text-sm text-gray-600">Co-founded and served on the board of MIT's program for providing advising to first generation/low income students.</p>
+                </div>
+                <div class="card p-4 rounded-xl border border-gray-200">
+                    <p class="font-semibold text-gray-800">President, MIT Quest Bridge Chapter (Sep. 2020 – June 2021)</p>
+                    <p class="text-sm text-gray-600">Led MIT's QuestBridge chapter, serving roughly 400 fellow undergraduates from first generation/low income backgrounds at MIT.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white p-4 mt-8">
+        <div class="max-w-7xl mx-auto text-center text-sm">
+            <p>&copy; 2025 Mohit Dighamber. Research Profile.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
